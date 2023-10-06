@@ -1,0 +1,153 @@
+:root{
+    --primary-color:#07A53D;
+    --secondary-color:gold;
+    --primary-white:#fff;
+    --primary-font-weight:600;
+    --default-margin: 35px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/*  header for the navigation */
+header{
+    height: 70px;
+    background-color: var(--primary-color);
+}
+
+header nav{
+    height: 70px;
+    margin: auto var(--default-margin);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links a{
+    padding: 10px 15px;
+    text-decoration: none;
+    color: var(--primary-white);
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+}
+
+a.active{
+    color: var(--secondary-color) !important;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+a:hover{
+  color: var(--secondary-color); 
+  border-bottom: 3px solid var(--secondary-color);
+}
+
+/*  welcome */
+
+.welcome_container{
+    background-image: url(../img/naassom-azevedo-Q_Sei-TqSlc-unsplash\ 1.png);
+    width: 100%;
+    height:400px;
+    background-size: contain;
+}
+
+.connect{
+    text-align: center;
+    padding-top: 100px;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.434);
+    
+}
+
+.connect h1{
+    color: var(--primary-white);
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.connect p{
+    color: var(--primary-white);
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.connect button{
+    width: 150px;
+    height: 50px;
+    background-color: var(--secondary-color);
+    color: var(--primary-white);
+    font-weight:600;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+
+/* ===== parteners ===== */
+
+.outer_parteners{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parteners{
+    width:50%;
+    border: 1px solid var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 20px;
+    background-color: #fff;
+    height: 70px;
+    border-radius: 5px;
+    position: relative;
+    top: -30px;
+}
+
+/* ======AAbout us ===== */
+
+.about_us{
+    display: flex;
+    margin: 0 50px;
+    justify-content:space-between;
+    /* align-items: center; */
+}
+
+.left_about_us{
+    width: 45%;
+}
+.left_about_us h1{
+    font-size: 50px;
+    color: black;
+}
+
+.rght_about_us{
+    width: 45%;
+}
+
+.heading{
+    display: flex;
+    align-items: center; 
+    /* justify-content: center; */
+}
+
+.one,.two,.three span{
+    color:#00000080;
+    font-size: 40px;
+    font-weight:700;
+}
+
+.heading_one,.heading_two{
+    margin-top: 20px;
+}
